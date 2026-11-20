@@ -1,0 +1,19 @@
+=== SDK ===
+10.0.115 [/usr/lib/dotnet/sdk]
+=== Releases publicados ===
+total 16
+drwxr-xr-x 4 root root 4096 nov 19 22:25 .
+drwxr-xr-x 3 root root 4096 nov 19 22:24 ..
+lrwxrwxrwx 1 root root   48 nov 19 22:25 current -> /opt/transitoclaro/releases/20261119-222453-4083
+drwxr-xr-x 3 root root 4096 nov 19 22:24 releases
+drwxrwxr-x 7 root root 4096 nov 19 22:23 so
+=== Banco SQLite ===
+-rw-r----- 1 transitoclaro transitoclaro 4,0K nov 19 22:25 /var/lib/transitoclaro/transitoclaro.db
+=== Endpoint HTTP ===
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Fri, 20 Nov 2026 01:28:44 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+
+[{"id":6,"nome":"Corredor Expresso Tiradentes","tipo":"Brt","operadora":"SPTrans","cor":null},{"id":1,"nome":"Linha 1-Azul","tipo":"Metro","operadora":"Metrô SP","cor":"Azul"},{"id":2,"nome":"Linha 2-Verde","tipo":"Metro","operadora":"Metrô SP","cor":"Verde"},{"id":3,"nome":"Linha 3-Vermelha","tipo":"Metro","operadora":"Metrô SP","cor":"Vermelha"},{"id":4,"nome":"Linha 11-Coral","tipo":"Trem","operadora":"CPTM","cor":"Coral"},{"id":5,"nome":"Linha 9-Esmeralda","tipo":"Trem","operadora":"ViaMobilidade","cor":"Esmeralda"}]

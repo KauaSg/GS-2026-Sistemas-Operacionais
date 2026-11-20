@@ -1,0 +1,159 @@
+=== Últimos logs de provisionamento ===
+2026-11-19T22:24:14-03:00 [INFO] [00_instalar_tudo.sh] Início do provisionamento completo (Ubuntu VM).
+2026-11-19T22:24:14-03:00 [INFO] [01_provisionar_infra.sh] Instalando pacotes de rede e auditoria.
+2026-11-19T22:24:31-03:00 [INFO] [01_provisionar_infra.sh] Configurando hostname como transitoclaro-vm.
+2026-11-19T22:24:32-03:00 [INFO] [01_provisionar_infra.sh] Configurando DNS persistente: 1.1.1.1 8.8.8.8
+2026-11-19T22:24:32-03:00 [INFO] [01_provisionar_infra.sh] Endereço IPv4 mantido via DHCP (configuração padrão da VM).
+2026-11-19T22:24:32-03:00 [INFO] [01_provisionar_infra.sh] Interfaces e IPs: enp0s3=10.0.2.15/24 
+2026-11-19T22:24:32-03:00 [INFO] [01_provisionar_infra.sh] Gateway/rota padrão: default via 10.0.2.2 dev enp0s3 proto dhcp src 10.0.2.15 metric 100 
+2026-11-19T22:24:32-03:00 [INFO] [01_provisionar_infra.sh] Hostname atual: transitoclaro-vm
+2026-11-19T22:24:32-03:00 [INFO] [01_provisionar_infra.sh] Provisionamento de rede finalizado.
+2026-11-19T22:24:32-03:00 [INFO] [02_provisionar_aplicacao.sh] Instalando Git e SDK .NET 10 pelos repositórios oficiais do Ubuntu.
+2026-11-19T22:24:52-03:00 [INFO] [02_provisionar_aplicacao.sh] SDK instalado: 10.0.115
+2026-11-19T22:24:52-03:00 [INFO] [02_provisionar_aplicacao.sh] Clonando repositório https://github.com/PietroVP0777/PietroVP0777-Gs_2026_Cs.git (main)
+2026-11-19T22:24:53-03:00 [INFO] [02_provisionar_aplicacao.sh] Restaurando dependências e publicando a API CitizenTech.
+2026-11-19T22:25:12-03:00 [INFO] [02_provisionar_aplicacao.sh] API publicada em /opt/transitoclaro/releases/20261119-222453-4083, saudável em http://127.0.0.1:5000/api/linhas
+2026-11-19T22:25:16-03:00 [INFO] [03_configurar_monitoramento.sh] Monitoramento ativo no systemd, configurado com Restart=always.
+2026-11-19T22:25:16-03:00 [INFO] [04_verificar_ambiente.sh] Iniciando verificação operacional de rede, .NET, banco e serviços.
+2026-11-19T22:25:16-03:00 [INFO] [04_verificar_ambiente.sh] API respondeu corretamente em http://127.0.0.1:5000/api/linhas
+2026-11-19T22:25:16-03:00 [INFO] [04_verificar_ambiente.sh] Banco SQLite encontrado e não vazio.
+2026-11-19T22:25:16-03:00 [INFO] [04_verificar_ambiente.sh] Validação do ambiente concluída.
+2026-11-19T22:25:16-03:00 [INFO] [00_instalar_tudo.sh] Provisionamento completo concluído. Execute 05_testar_falha.sh para evidenciar recuperação.
+2026-11-19T22:28:19-03:00 [INFO] [05_testar_falha.sh] Teste de falha controlada iniciado. Execute apenas na VM da GS.
+2026-11-19T22:28:26-03:00 [INFO] [05_testar_falha.sh] Teste concluído: PID 5003 -> 6043; reinício automático comprovado.
+2026-11-19T22:28:35-03:00 [INFO] [08_testar_falha_monitor.sh] Teste de falha do monitor concluído: PID 5343 -> 6133.
+2026-11-19T22:28:44-03:00 [INFO] [07_coletar_evidencias.sh] Coleta de evidências operacionais iniciada em /home/kaua/Downloads/so/evidencias/execucao
+=== Últimos logs de monitoramento ===
+2026-11-19T22:25:13-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+2026-11-19T22:25:14-03:00 [INFO] [monitor] CPU=2% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:25:15-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:25:31-03:00 [INFO] [monitor] CPU=2% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:25:31-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:25:47-03:00 [INFO] [monitor] CPU=4% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:25:47-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:26:03-03:00 [INFO] [monitor] CPU=1% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:26:03-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:26:19-03:00 [INFO] [monitor] CPU=15% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:26:19-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:26:35-03:00 [INFO] [monitor] CPU=62% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:26:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:26:52-03:00 [INFO] [monitor] CPU=34% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:26:52-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:27:08-03:00 [INFO] [monitor] CPU=52% RAM=60% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:27:08-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:27:24-03:00 [INFO] [monitor] CPU=18% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:27:24-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:27:40-03:00 [INFO] [monitor] CPU=12% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:27:40-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:27:56-03:00 [INFO] [monitor] CPU=16% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:27:56-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:28:12-03:00 [INFO] [monitor] CPU=40% RAM=58% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:28:12-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:28:28-03:00 [INFO] [monitor] CPU=13% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:28:28-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:28:34-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+2026-11-19T22:28:35-03:00 [INFO] [monitor] CPU=29% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+2026-11-19T22:28:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+2026-11-19T22:28:38-03:00 [INFO] [monitor] CPU=52% RAM=56% DISCO=31% | limites CPU=0 RAM=0 DISCO=0
+2026-11-19T22:28:38-03:00 [ALERTA] [monitor] Uso de CPU acima do limite: 52% (limite 0%)
+2026-11-19T22:28:38-03:00 [ALERTA] [monitor] Uso de memória acima do limite: 56% (limite 0%)
+2026-11-19T22:28:38-03:00 [ALERTA] [monitor] Uso de disco acima do limite: 31% (limite 0%)
+2026-11-19T22:28:38-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+=== Alertas ===
+2026-11-19T22:28:38-03:00 [ALERTA] [monitor] Uso de CPU acima do limite: 52% (limite 0%)
+2026-11-19T22:28:38-03:00 [ALERTA] [monitor] Uso de memória acima do limite: 56% (limite 0%)
+2026-11-19T22:28:38-03:00 [ALERTA] [monitor] Uso de disco acima do limite: 31% (limite 0%)
+=== Teste de falha - API ===
+2026-11-19T22:28:19-03:00 | INÍCIO | serviço ativo; PID=5003
+2026-11-19T22:28:19-03:00 | FALHA SIMULADA | processo 5003 encerrado com SIGKILL
+2026-11-19T22:28:26-03:00 | RECUPERAÇÃO OK | novo PID=6043; HTTP 200 no endpoint
+
+=== JOURNALCTL DA API (ÚLTIMAS 3 MIN) ===
+nov 19 22:28:12 transitoclaro-vm transitoclaro-api[5003]:       Executed action TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api) in 0.9293ms
+nov 19 22:28:12 transitoclaro-vm transitoclaro-api[5003]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+nov 19 22:28:12 transitoclaro-vm transitoclaro-api[5003]:       Executed endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:12 transitoclaro-vm transitoclaro-api[5003]: info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+nov 19 22:28:12 transitoclaro-vm transitoclaro-api[5003]:       Request finished HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - 200 - application/json;+charset=utf-8 1.2022ms
+nov 19 22:28:19 transitoclaro-vm systemd[1]: transitoclaro-api.service: Main process exited, code=killed, status=9/KILL
+nov 19 22:28:19 transitoclaro-vm systemd[1]: transitoclaro-api.service: Failed with result 'signal'.
+nov 19 22:28:19 transitoclaro-vm systemd[1]: transitoclaro-api.service: Consumed 3.053s CPU time, 68.1M memory peak, 0B memory swap peak.
+nov 19 22:28:23 transitoclaro-vm systemd[1]: transitoclaro-api.service: Scheduled restart job, restart counter is at 1.
+nov 19 22:28:23 transitoclaro-vm systemd[1]: Started transitoclaro-api.service - TransitoClaro CitizenTech - API REST ASP.NET Core.
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]:       Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]:       SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.Hosting.Lifetime[14]
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]:       Now listening on: http://127.0.0.1:5000
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.Hosting.Lifetime[0]
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]:       Application started. Press Ctrl+C to shut down.
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.Hosting.Lifetime[0]
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]:       Hosting environment: Production
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.Hosting.Lifetime[0]
+nov 19 22:28:24 transitoclaro-vm transitoclaro-api[6043]:       Content root path: /var/lib/transitoclaro
+nov 19 22:28:25 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+nov 19 22:28:25 transitoclaro-vm transitoclaro-api[6043]:       Request starting HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - - -
+nov 19 22:28:25 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+nov 19 22:28:25 transitoclaro-vm transitoclaro-api[6043]:       Executing endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:25 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+nov 19 22:28:25 transitoclaro-vm transitoclaro-api[6043]:       Route matched with {action = "Listar", controller = "Linhas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyList`1[TransitoClaro.Api.Dtos.LinhaDto]]] Listar(System.Nullable`1[TransitoClaro.Api.Domain.TipoTransporte], System.Threading.CancellationToken) on controller TransitoClaro.Api.Controllers.LinhasController (TransitoClaro.Api).
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]:       Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]:       SELECT "l"."Id", "l"."Cor", "l"."Nome", "l"."Operadora", "l"."Tipo"
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]:       FROM "Linhas" AS "l"
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]:       ORDER BY "l"."Tipo", "l"."Nome"
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]:       Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TransitoClaro.Api.Dtos.LinhaDto, TransitoClaro.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]:       Executed action TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api) in 476.6386ms
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]:       Executed endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+nov 19 22:28:26 transitoclaro-vm transitoclaro-api[6043]:       Request finished HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - 200 - application/json;+charset=utf-8 570.9686ms
+
+=== Teste de falha - MONITOR ===
+2026-11-19T22:28:29-03:00 | INÍCIO: monitor ativo; PID=5343; Restart=always
+2026-11-19T22:28:29-03:00 | FALHA SIMULADA: encerrando somente o processo principal do monitor com SIGKILL.
+2026-11-19T22:28:35-03:00 | RECUPERAÇÃO OK: novo PID=6133; o monitor voltou a gerar logs.
+
+=== JOURNALCTL DO MONITOR (ÚLTIMOS 3 MIN) ===
+nov 19 22:26:03 transitoclaro-vm transitoclaro-monitor[5523]: 2026-11-19T22:26:03-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:19 transitoclaro-vm transitoclaro-monitor[5543]: 2026-11-19T22:26:19-03:00 [INFO] [monitor] CPU=15% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:19 transitoclaro-vm transitoclaro-monitor[5550]: 2026-11-19T22:26:19-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:19 transitoclaro-vm transitoclaro-monitor[5551]: 2026-11-19T22:26:19-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:35 transitoclaro-vm transitoclaro-monitor[5833]: 2026-11-19T22:26:35-03:00 [INFO] [monitor] CPU=62% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:35 transitoclaro-vm transitoclaro-monitor[5834]: 2026-11-19T22:26:35-03:00 [INFO] [monitor] CPU=62% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:36 transitoclaro-vm transitoclaro-monitor[5840]: 2026-11-19T22:26:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:36 transitoclaro-vm transitoclaro-monitor[5841]: 2026-11-19T22:26:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:52 transitoclaro-vm transitoclaro-monitor[5861]: 2026-11-19T22:26:52-03:00 [INFO] [monitor] CPU=34% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:52 transitoclaro-vm transitoclaro-monitor[5869]: 2026-11-19T22:26:52-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:52 transitoclaro-vm transitoclaro-monitor[5870]: 2026-11-19T22:26:52-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:08 transitoclaro-vm transitoclaro-monitor[5895]: 2026-11-19T22:27:08-03:00 [INFO] [monitor] CPU=52% RAM=60% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:08 transitoclaro-vm transitoclaro-monitor[5896]: 2026-11-19T22:27:08-03:00 [INFO] [monitor] CPU=52% RAM=60% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:08 transitoclaro-vm transitoclaro-monitor[5902]: 2026-11-19T22:27:08-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:08 transitoclaro-vm transitoclaro-monitor[5903]: 2026-11-19T22:27:08-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:24 transitoclaro-vm transitoclaro-monitor[5918]: 2026-11-19T22:27:24-03:00 [INFO] [monitor] CPU=18% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:24 transitoclaro-vm transitoclaro-monitor[5919]: 2026-11-19T22:27:24-03:00 [INFO] [monitor] CPU=18% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:24 transitoclaro-vm transitoclaro-monitor[5926]: 2026-11-19T22:27:24-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:24 transitoclaro-vm transitoclaro-monitor[5927]: 2026-11-19T22:27:24-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:40 transitoclaro-vm transitoclaro-monitor[5944]: 2026-11-19T22:27:40-03:00 [INFO] [monitor] CPU=12% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:40 transitoclaro-vm transitoclaro-monitor[5953]: 2026-11-19T22:27:40-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:40 transitoclaro-vm transitoclaro-monitor[5954]: 2026-11-19T22:27:40-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:56 transitoclaro-vm transitoclaro-monitor[5971]: 2026-11-19T22:27:56-03:00 [INFO] [monitor] CPU=16% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:56 transitoclaro-vm transitoclaro-monitor[5972]: 2026-11-19T22:27:56-03:00 [INFO] [monitor] CPU=16% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:56 transitoclaro-vm transitoclaro-monitor[5979]: 2026-11-19T22:27:56-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:56 transitoclaro-vm transitoclaro-monitor[5980]: 2026-11-19T22:27:56-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:12 transitoclaro-vm transitoclaro-monitor[6000]: 2026-11-19T22:28:12-03:00 [INFO] [monitor] CPU=40% RAM=58% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:12 transitoclaro-vm transitoclaro-monitor[6001]: 2026-11-19T22:28:12-03:00 [INFO] [monitor] CPU=40% RAM=58% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:12 transitoclaro-vm transitoclaro-monitor[6008]: 2026-11-19T22:28:12-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:12 transitoclaro-vm transitoclaro-monitor[6009]: 2026-11-19T22:28:12-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:28 transitoclaro-vm transitoclaro-monitor[6094]: 2026-11-19T22:28:28-03:00 [INFO] [monitor] CPU=13% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:28 transitoclaro-vm transitoclaro-monitor[6095]: 2026-11-19T22:28:28-03:00 [INFO] [monitor] CPU=13% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:28 transitoclaro-vm transitoclaro-monitor[6101]: 2026-11-19T22:28:28-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:28 transitoclaro-vm transitoclaro-monitor[6102]: 2026-11-19T22:28:28-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:29 transitoclaro-vm systemd[1]: transitoclaro-monitor.service: Main process exited, code=killed, status=9/KILL
+nov 19 22:28:29 transitoclaro-vm systemd[1]: transitoclaro-monitor.service: Failed with result 'signal'.
+nov 19 22:28:34 transitoclaro-vm systemd[1]: transitoclaro-monitor.service: Scheduled restart job, restart counter is at 1.
+nov 19 22:28:34 transitoclaro-vm systemd[1]: Started transitoclaro-monitor.service - TransitoClaro CitizenTech - monitoramento de recursos e saúde da API.
+nov 19 22:28:34 transitoclaro-vm transitoclaro-monitor[6141]: 2026-11-19T22:28:34-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+nov 19 22:28:34 transitoclaro-vm transitoclaro-monitor[6142]: 2026-11-19T22:28:34-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+

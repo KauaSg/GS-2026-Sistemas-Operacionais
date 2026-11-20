@@ -1,0 +1,133 @@
+=== journal da API ===
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]:       Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]:       SELECT "l"."Id", "l"."Cor", "l"."Nome", "l"."Operadora", "l"."Tipo"
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]:       FROM "Linhas" AS "l"
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]:       ORDER BY "l"."Tipo", "l"."Nome"
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]:       Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TransitoClaro.Api.Dtos.LinhaDto, TransitoClaro.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]:       Executed action TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api) in 55.4132ms
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]:       Executed endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+nov 19 22:28:28 transitoclaro-vm transitoclaro-api[6043]:       Request finished HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - 200 - application/json;+charset=utf-8 58.2525ms
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       Request starting HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - - -
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       Executing endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       Route matched with {action = "Listar", controller = "Linhas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyList`1[TransitoClaro.Api.Dtos.LinhaDto]]] Listar(System.Nullable`1[TransitoClaro.Api.Domain.TipoTransporte], System.Threading.CancellationToken) on controller TransitoClaro.Api.Controllers.LinhasController (TransitoClaro.Api).
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       SELECT "l"."Id", "l"."Cor", "l"."Nome", "l"."Operadora", "l"."Tipo"
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       FROM "Linhas" AS "l"
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       ORDER BY "l"."Tipo", "l"."Nome"
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TransitoClaro.Api.Dtos.LinhaDto, TransitoClaro.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       Executed action TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api) in 7.101ms
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       Executed endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+nov 19 22:28:35 transitoclaro-vm transitoclaro-api[6043]:       Request finished HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - 200 - application/json;+charset=utf-8 12.2030ms
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       Request starting HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - - -
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       Executing endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       Route matched with {action = "Listar", controller = "Linhas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyList`1[TransitoClaro.Api.Dtos.LinhaDto]]] Listar(System.Nullable`1[TransitoClaro.Api.Domain.TipoTransporte], System.Threading.CancellationToken) on controller TransitoClaro.Api.Controllers.LinhasController (TransitoClaro.Api).
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       SELECT "l"."Id", "l"."Cor", "l"."Nome", "l"."Operadora", "l"."Tipo"
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       FROM "Linhas" AS "l"
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       ORDER BY "l"."Tipo", "l"."Nome"
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TransitoClaro.Api.Dtos.LinhaDto, TransitoClaro.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       Executed action TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api) in 4.8826ms
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       Executed endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+nov 19 22:28:38 transitoclaro-vm transitoclaro-api[6043]:       Request finished HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - 200 - application/json;+charset=utf-8 5.2755ms
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Request starting HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - - -
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Executing endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Route matched with {action = "Listar", controller = "Linhas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyList`1[TransitoClaro.Api.Dtos.LinhaDto]]] Listar(System.Nullable`1[TransitoClaro.Api.Domain.TipoTransporte], System.Threading.CancellationToken) on controller TransitoClaro.Api.Controllers.LinhasController (TransitoClaro.Api).
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       SELECT "l"."Id", "l"."Cor", "l"."Nome", "l"."Operadora", "l"."Tipo"
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       FROM "Linhas" AS "l"
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       ORDER BY "l"."Tipo", "l"."Nome"
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TransitoClaro.Api.Dtos.LinhaDto, TransitoClaro.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Executed action TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api) in 4.361ms
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Executed endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Request finished HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - 200 - application/json;+charset=utf-8 5.5389ms
+=== journal do monitor ===
+nov 19 22:25:13 transitoclaro-vm systemd[1]: Started transitoclaro-monitor.service - TransitoClaro CitizenTech - monitoramento de recursos e saúde da API.
+nov 19 22:25:13 transitoclaro-vm transitoclaro-monitor[5352]: 2026-11-19T22:25:13-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+nov 19 22:25:13 transitoclaro-vm transitoclaro-monitor[5353]: 2026-11-19T22:25:13-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+nov 19 22:25:14 transitoclaro-vm transitoclaro-monitor[5365]: 2026-11-19T22:25:14-03:00 [INFO] [monitor] CPU=2% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:25:14 transitoclaro-vm transitoclaro-monitor[5366]: 2026-11-19T22:25:14-03:00 [INFO] [monitor] CPU=2% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:25:15 transitoclaro-vm transitoclaro-monitor[5372]: 2026-11-19T22:25:15-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:25:15 transitoclaro-vm transitoclaro-monitor[5373]: 2026-11-19T22:25:15-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:25:31 transitoclaro-vm transitoclaro-monitor[5458]: 2026-11-19T22:25:31-03:00 [INFO] [monitor] CPU=2% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:25:31 transitoclaro-vm transitoclaro-monitor[5459]: 2026-11-19T22:25:31-03:00 [INFO] [monitor] CPU=2% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:25:31 transitoclaro-vm transitoclaro-monitor[5465]: 2026-11-19T22:25:31-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:25:31 transitoclaro-vm transitoclaro-monitor[5466]: 2026-11-19T22:25:31-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:25:47 transitoclaro-vm transitoclaro-monitor[5488]: 2026-11-19T22:25:47-03:00 [INFO] [monitor] CPU=4% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:25:47 transitoclaro-vm transitoclaro-monitor[5495]: 2026-11-19T22:25:47-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:25:47 transitoclaro-vm transitoclaro-monitor[5496]: 2026-11-19T22:25:47-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:03 transitoclaro-vm transitoclaro-monitor[5514]: 2026-11-19T22:26:03-03:00 [INFO] [monitor] CPU=1% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:03 transitoclaro-vm transitoclaro-monitor[5515]: 2026-11-19T22:26:03-03:00 [INFO] [monitor] CPU=1% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:03 transitoclaro-vm transitoclaro-monitor[5522]: 2026-11-19T22:26:03-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:03 transitoclaro-vm transitoclaro-monitor[5523]: 2026-11-19T22:26:03-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:19 transitoclaro-vm transitoclaro-monitor[5543]: 2026-11-19T22:26:19-03:00 [INFO] [monitor] CPU=15% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:19 transitoclaro-vm transitoclaro-monitor[5550]: 2026-11-19T22:26:19-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:19 transitoclaro-vm transitoclaro-monitor[5551]: 2026-11-19T22:26:19-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:35 transitoclaro-vm transitoclaro-monitor[5833]: 2026-11-19T22:26:35-03:00 [INFO] [monitor] CPU=62% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:35 transitoclaro-vm transitoclaro-monitor[5834]: 2026-11-19T22:26:35-03:00 [INFO] [monitor] CPU=62% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:36 transitoclaro-vm transitoclaro-monitor[5840]: 2026-11-19T22:26:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:36 transitoclaro-vm transitoclaro-monitor[5841]: 2026-11-19T22:26:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:52 transitoclaro-vm transitoclaro-monitor[5861]: 2026-11-19T22:26:52-03:00 [INFO] [monitor] CPU=34% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:26:52 transitoclaro-vm transitoclaro-monitor[5869]: 2026-11-19T22:26:52-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:26:52 transitoclaro-vm transitoclaro-monitor[5870]: 2026-11-19T22:26:52-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:08 transitoclaro-vm transitoclaro-monitor[5895]: 2026-11-19T22:27:08-03:00 [INFO] [monitor] CPU=52% RAM=60% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:08 transitoclaro-vm transitoclaro-monitor[5896]: 2026-11-19T22:27:08-03:00 [INFO] [monitor] CPU=52% RAM=60% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:08 transitoclaro-vm transitoclaro-monitor[5902]: 2026-11-19T22:27:08-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:08 transitoclaro-vm transitoclaro-monitor[5903]: 2026-11-19T22:27:08-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:24 transitoclaro-vm transitoclaro-monitor[5918]: 2026-11-19T22:27:24-03:00 [INFO] [monitor] CPU=18% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:24 transitoclaro-vm transitoclaro-monitor[5919]: 2026-11-19T22:27:24-03:00 [INFO] [monitor] CPU=18% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:24 transitoclaro-vm transitoclaro-monitor[5926]: 2026-11-19T22:27:24-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:24 transitoclaro-vm transitoclaro-monitor[5927]: 2026-11-19T22:27:24-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:40 transitoclaro-vm transitoclaro-monitor[5944]: 2026-11-19T22:27:40-03:00 [INFO] [monitor] CPU=12% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:40 transitoclaro-vm transitoclaro-monitor[5953]: 2026-11-19T22:27:40-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:40 transitoclaro-vm transitoclaro-monitor[5954]: 2026-11-19T22:27:40-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:56 transitoclaro-vm transitoclaro-monitor[5971]: 2026-11-19T22:27:56-03:00 [INFO] [monitor] CPU=16% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:56 transitoclaro-vm transitoclaro-monitor[5972]: 2026-11-19T22:27:56-03:00 [INFO] [monitor] CPU=16% RAM=57% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:27:56 transitoclaro-vm transitoclaro-monitor[5979]: 2026-11-19T22:27:56-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:27:56 transitoclaro-vm transitoclaro-monitor[5980]: 2026-11-19T22:27:56-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:12 transitoclaro-vm transitoclaro-monitor[6000]: 2026-11-19T22:28:12-03:00 [INFO] [monitor] CPU=40% RAM=58% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:12 transitoclaro-vm transitoclaro-monitor[6001]: 2026-11-19T22:28:12-03:00 [INFO] [monitor] CPU=40% RAM=58% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:12 transitoclaro-vm transitoclaro-monitor[6008]: 2026-11-19T22:28:12-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:12 transitoclaro-vm transitoclaro-monitor[6009]: 2026-11-19T22:28:12-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:28 transitoclaro-vm transitoclaro-monitor[6094]: 2026-11-19T22:28:28-03:00 [INFO] [monitor] CPU=13% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:28 transitoclaro-vm transitoclaro-monitor[6095]: 2026-11-19T22:28:28-03:00 [INFO] [monitor] CPU=13% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:28 transitoclaro-vm transitoclaro-monitor[6101]: 2026-11-19T22:28:28-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:28 transitoclaro-vm transitoclaro-monitor[6102]: 2026-11-19T22:28:28-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:29 transitoclaro-vm systemd[1]: transitoclaro-monitor.service: Main process exited, code=killed, status=9/KILL
+nov 19 22:28:29 transitoclaro-vm systemd[1]: transitoclaro-monitor.service: Failed with result 'signal'.
+nov 19 22:28:34 transitoclaro-vm systemd[1]: transitoclaro-monitor.service: Scheduled restart job, restart counter is at 1.
+nov 19 22:28:34 transitoclaro-vm systemd[1]: Started transitoclaro-monitor.service - TransitoClaro CitizenTech - monitoramento de recursos e saúde da API.
+nov 19 22:28:34 transitoclaro-vm transitoclaro-monitor[6141]: 2026-11-19T22:28:34-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+nov 19 22:28:34 transitoclaro-vm transitoclaro-monitor[6142]: 2026-11-19T22:28:34-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+nov 19 22:28:35 transitoclaro-vm transitoclaro-monitor[6170]: 2026-11-19T22:28:35-03:00 [INFO] [monitor] CPU=29% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:35 transitoclaro-vm transitoclaro-monitor[6171]: 2026-11-19T22:28:35-03:00 [INFO] [monitor] CPU=29% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:35 transitoclaro-vm transitoclaro-monitor[6177]: 2026-11-19T22:28:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:35 transitoclaro-vm transitoclaro-monitor[6178]: 2026-11-19T22:28:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK

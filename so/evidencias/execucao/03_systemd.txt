@@ -1,0 +1,48 @@
+=== API ===
+Warning: The unit file, source configuration file or drop-ins of transitoclaro-api.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+● transitoclaro-api.service - TransitoClaro CitizenTech - API REST ASP.NET Core
+     Loaded: loaded (/etc/systemd/system/transitoclaro-api.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-11-19 22:28:23 -03; 21s ago
+   Main PID: 6043 (dotnet)
+      Tasks: 21 (limit: 3453)
+     Memory: 55.0M (peak: 55.3M)
+        CPU: 2.336s
+     CGroup: /system.slice/transitoclaro-api.service
+             └─6043 /usr/bin/dotnet /opt/transitoclaro/current/TransitoClaro.Api.dll
+
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       FROM "Linhas" AS "l"
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       ORDER BY "l"."Tipo", "l"."Nome"
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TransitoClaro.Api.Dtos.LinhaDto, TransitoClaro.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Executed action TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api) in 4.361ms
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Executed endpoint 'TransitoClaro.Api.Controllers.LinhasController.Listar (TransitoClaro.Api)'
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]: info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+nov 19 22:28:44 transitoclaro-vm transitoclaro-api[6043]:       Request finished HTTP/1.1 GET http://127.0.0.1:5000/api/linhas - 200 - application/json;+charset=utf-8 5.5389ms
+=== Monitor ===
+Warning: The unit file, source configuration file or drop-ins of transitoclaro-monitor.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+● transitoclaro-monitor.service - TransitoClaro CitizenTech - monitoramento de recursos e saúde da API
+     Loaded: loaded (/etc/systemd/system/transitoclaro-monitor.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-11-19 22:28:34 -03; 10s ago
+   Main PID: 6133 (bash)
+      Tasks: 2 (limit: 3453)
+     Memory: 724.0K (peak: 2.2M)
+        CPU: 78ms
+     CGroup: /system.slice/transitoclaro-monitor.service
+             ├─6133 bash /opt/transitoclaro/so/scripts/06_monitorar.sh --loop
+             └─6179 sleep 15
+
+nov 19 22:28:34 transitoclaro-vm systemd[1]: transitoclaro-monitor.service: Scheduled restart job, restart counter is at 1.
+nov 19 22:28:34 transitoclaro-vm systemd[1]: Started transitoclaro-monitor.service - TransitoClaro CitizenTech - monitoramento de recursos e saúde da API.
+nov 19 22:28:34 transitoclaro-vm transitoclaro-monitor[6141]: 2026-11-19T22:28:34-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+nov 19 22:28:34 transitoclaro-vm transitoclaro-monitor[6142]: 2026-11-19T22:28:34-03:00 [INFO] [monitor] Serviço de monitoramento iniciado, intervalo 15s
+nov 19 22:28:35 transitoclaro-vm transitoclaro-monitor[6170]: 2026-11-19T22:28:35-03:00 [INFO] [monitor] CPU=29% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:35 transitoclaro-vm transitoclaro-monitor[6171]: 2026-11-19T22:28:35-03:00 [INFO] [monitor] CPU=29% RAM=56% DISCO=31% | limites CPU=80 RAM=80 DISCO=85
+nov 19 22:28:35 transitoclaro-vm transitoclaro-monitor[6177]: 2026-11-19T22:28:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+nov 19 22:28:35 transitoclaro-vm transitoclaro-monitor[6178]: 2026-11-19T22:28:35-03:00 [INFO] [monitor] ESTADO=API_ATIVA_HEALTH_OK
+=== Políticas de restart ===
+Restart=always
+NRestarts=1
+Restart=always
+NRestarts=1
