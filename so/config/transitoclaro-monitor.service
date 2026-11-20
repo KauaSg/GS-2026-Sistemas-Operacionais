@@ -1,0 +1,21 @@
+[Unit]
+Description=TransitoClaro CitizenTech - monitoramento de recursos e saúde da API
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/transitoclaro/so/scripts/06_monitorar.sh --loop
+Restart=always
+RestartSec=5s
+Environment=TC_CONFIG_FILE=/etc/transitoclaro/so.env
+NoNewPrivileges=true
+ProtectHome=true
+ProtectSystem=full
+UMask=0027
+SyslogIdentifier=transitoclaro-monitor
+
+[Install]
+WantedBy=multi-user.target

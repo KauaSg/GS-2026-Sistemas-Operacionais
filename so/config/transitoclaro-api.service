@@ -1,0 +1,26 @@
+[Unit]
+Description=TransitoClaro CitizenTech - API REST ASP.NET Core
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=transitoclaro
+Group=transitoclaro
+WorkingDirectory=/var/lib/transitoclaro
+EnvironmentFile=/etc/transitoclaro/app.env
+ExecStart=/usr/bin/dotnet /opt/transitoclaro/current/TransitoClaro.Api.dll
+Restart=always
+RestartSec=3s
+TimeoutStartSec=90
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/transitoclaro
+UMask=0027
+SyslogIdentifier=transitoclaro-api
+
+[Install]
+WantedBy=multi-user.target
